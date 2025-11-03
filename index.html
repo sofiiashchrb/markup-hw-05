@@ -63,8 +63,20 @@
     <main>
       <section class="hero">
         <h1 class="title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close" data-modal-close>
+            <svg width="30" height="30" class="icon-close">
+              <use href="./images/close.svg"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <section class="advantages">
         <div class="container">
@@ -128,29 +140,23 @@
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="images-list">
-            <li>
-              <img
-                class="item"
-                src="images/about_1.jpg"
-                alt="about_us_1"
-                width="370"
-              />
+            <li class="item">
+              <div class="thumb">
+                <img src="images/about_1.jpg" alt="about_us_1" width="370" />
+                <div class="label">ДЕСКТОПНІ ДОДАТКИ</div>
+              </div>
             </li>
-            <li>
-              <img
-                class="item"
-                src="images/about_2.jpg"
-                alt="about_us_2"
-                width="370"
-              />
+            <li class="item">
+              <div class="thumb">
+                <img src="images/about_2.jpg" alt="about_us_2" width="370" />
+                <div class="label">МОБІЛЬНІ ДОДАТКИ</div>
+              </div>
             </li>
-            <li>
-              <img
-                class="item"
-                src="images/about_3.jpg"
-                alt="about_us_3"
-                width="370"
-              />
+            <li class="item">
+              <div class="thumb">
+                <img src="images/about_3.jpg" alt="about_us_3" width="370" />
+                <div class="label">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+              </div>
             </li>
           </ul>
         </div>
@@ -432,5 +438,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
